@@ -28,3 +28,6 @@ class ChunkedFile(object):
 
     def __iter__(self):
         return self.file.chunks()
+
+    def close(self):
+        self.file.close()
